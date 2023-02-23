@@ -3,10 +3,7 @@ body {
 	margin: 0;
 	padding: 0;
   }
-  .greeting{
-	margin:5rem;
-	color:gray;
-  }
+ 
   .container{
 	text-align:center;
   }
@@ -14,6 +11,7 @@ body {
 	margin-left: auto;
 	margin-right: auto;
   }
+  /*navigation bar*/
   .logo{
 	 width: 150px;
   height: auto; 
@@ -22,7 +20,7 @@ body {
 	color: #fff;
 	display: flex;
 	justify-content: space-between;
-	padding: 10px;
+	padding: 15px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 
   }
@@ -69,6 +67,11 @@ body {
   nav a:hover {
 	color: black;
   }
+  /*welcome*/
+  .greeting{
+	margin:5rem;
+	color:gray;
+  }
   
   /* CSS */
   .button_con {
@@ -90,10 +93,9 @@ body {
 	background: linear-gradient(135deg, #ff6c3f 0%, #fe4350 100%);
 	color: #fff;
   }
-  
+  /*announcement*/
   .card{
-	background:#FE5748;
-	  color:white;
+	background:#25503f;
 	  width: 20%;
 	height: 80rem;
 	 box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -104,13 +106,18 @@ body {
 	text-align: center;
 	float: right;
   }
+  .card-body{
+	color: white;
+  }
   .card-header {
 	color: white;
 	font-weight: bold;
 	padding: 10px;
   }
+  /*remarks*/
   .card2 {
 	background:#FE5748;
+	
 	border-radius: 20px;
 	 box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 	padding: 30px;
@@ -129,7 +136,7 @@ body {
 	color:white;
 	text-align: justify;
   }
-  
+  /*profile pic*/
   .profile-pic-div{
 	 display: flex;
 	  height: 9.5rem;
@@ -162,13 +169,14 @@ body {
 	  transform: translateX(-50%);
 	  text-align: center;
 	  background: rgba(0, 0, 0, 0.7);
-	  color: wheat;
+	  color: black;
 	  line-height: 30px;
 	  font-family: sans-serif;
 	  font-size: 15px;
 	  cursor: pointer;
 	  display: none;
   }
+  /*certificate form*/
   .card3 {
 	margin: 10px 250px 9px;
 	width: 600px;
@@ -226,7 +234,7 @@ body {
   select option[value=""] {
 	display: none;
   }
-  
+  /*download and print button*/
   .btn-row {
 	display: flex;
 	justify-content: space-between;
@@ -258,6 +266,8 @@ body {
 	background: rgb(113,21,0);
 	background: linear-gradient(90deg, rgba(113,21,0,1) 0%, rgba(149,73,15,1) 41%, rgba(10,250,167,1) 100%);
   }
+
+  /*bottom design*/
   .bottom-rectangle {
 	width: 100%;
 	height: 200px;
