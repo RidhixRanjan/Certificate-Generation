@@ -93,6 +93,7 @@ body {
   
   .card{
 	background:#FE5748;
+	  color:white;
 	  width: 20%;
 	height: 80rem;
 	 box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
