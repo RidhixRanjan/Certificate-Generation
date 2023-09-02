@@ -1,287 +1,315 @@
+/* Reset styles and common styles */
 body {
-	font-family: Arial, sans-serif;
-	margin: 0;
-	padding: 0;
-  }
- 
-  .container{
-	text-align:center;
-  }
-  .Info{
-	margin-left: auto;
-	margin-right: auto;
-  }
-  /*navigation bar*/
-  .logo{
-	 width: 150px;
-  height: auto; 
-  }
-  header {
-	color: #fff;
-	display: flex;
-	justify-content: space-between;
-	padding: 15px;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    font-family: Arial, sans-serif; /* Set font family and remove default margins and padding */
+    margin: 0;
+    padding: 0;
+}
 
-  }
-  
-  nav{
-	
-	  margin:0 auto;
-	  text-align: center;
-  }
-  
-  nav ul {
-	display: flex;
-	text-align: center;
-	list-style: none;
-	margin-top: 50px;
-	padding: 30px;
-  }
-  
-  nav a {
-	display: block;
-	padding: 10px 25px;
-	text-decoration: none;
-	color: grey;
-	position: relative;
-  }
-  
-  nav a::after {
-	content: "";
-	position: absolute;
-	bottom: -10px;
-	left: 0;
-	right: 0;
-	height: 2px;
-	width:0;
-	 background: linear-gradient(to right, #FE5748, #FF6542, #00DBA1);
-	transition: 0.3s;
-  }
-  
-  nav a:hover::after {
-	width: 100%;
-  }
-  
-  
-  nav a:hover {
-	color: black;
-  }
-  /*welcome*/
-  .greeting{
-	margin:5rem;
-	color:gray;
-  }
-  
-  /* CSS */
-  .button_con {
-	 background-color: transparent;
-	border: 2px solid #1A1A1A;
-	border-radius: 10px;
-	color: #3B3B3B;
-	cursor: pointer;
-	font-size: 12px;
-	font-weight: 600;
-	padding: 10px 30px;
-	transition: all 300ms ease-in-out;
-	float: right;
-	position: absolute;
-	right: 100px;
-  }
-  
-  button:hover {
-	background: linear-gradient(135deg, #ff6c3f 0%, #fe4350 100%);
-	color: #fff;
-  }
-  /*announcement*/
-  .card{
-	background:#25503f;
-	  width: 20%;
-	height: 80rem;
-	 box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-	display: inline-block;
-	margin: -100px 0;
-	border-top-left-radius: 30px;
-	border-bottom-left-radius: 30px;
-	text-align: center;
-	float: right;
-  }
-  .card-body{
-	color: white;
-  }
-  .card-header {
-	color: white;
-	font-weight: bold;
-	padding: 10px;
-  }
-  /*remarks*/
-  .card2 {
-	background:#FE5748;
-	
-	border-radius: 20px;
-	 box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-	padding: 30px;
-	text-align:center;
-	width: 40%;
-	margin: auto;
-  }
-  .card-heading {
-	color:white;
-	text-align: left;
-	font-weight: bold;
-	margin-bottom: 30px;
-  }
-  
-  .card-paragraph {
-	color:white;
-	text-align: justify;
-  }
-  /*profile pic*/
-  .profile-pic-div{
-	 display: flex;
-	  height: 9.5rem;
-	  width: 9.5rem;
-	  margin-left:15rem;
-	  margin-top:-95px;
-	  top: 50%;
-	  left: 50%;
-	  transform: translate(-50%,-50%);
-	  border-radius: 0%;
-	  overflow: hidden;
-	  border: 1px solid grey;
-  }
-  
-  #photo{
-	  height: 100%;
-	  width: 100%;
-  }
-  
-  #file{
-	  display: none;
-  }
-  
-  #uploadBtn{
-	  height: 40px;
-	  width: 100%;
-	  position: absolute;
-	  bottom: 0;
-	  left: 50%;
-	  transform: translateX(-50%);
-	  text-align: center;
-	  background: rgba(0, 0, 0, 0.7);
-	  color: black;
-	  line-height: 30px;
-	  font-family: sans-serif;
-	  font-size: 15px;
-	  cursor: pointer;
-	  display: none;
-  }
-  /*certificate form*/
-  .card3 {
-	margin: 10px 250px 9px;
-	width: 600px;
-	background-color: #fff;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-	padding: 20px;
-  }
-  
-  h1 {
-	margin: 0 0 30px;
-	text-align:center;
-	font-weight: bold;
-	color:#FF7B54;
-  }
-  
-  form {
-	display: flex;
-	flex-direction: column;
-  }
-  
-  .form-row {
-	display: flex;
-	align-items: center;
-	margin: 10px 0;
-	padding:30px;
-	 border-bottom: 1px solid #d1d1d1;
-  }
-  
-  label {
-	display: inline-block;
-	width: 120px;
-	font-weight: bold;
-	color: #b01717;
-  }
-  
-  input[type="text"], select, input[type="date"] {
-	flex: 1;
-	border: none;
-	border-bottom: 2px solid #ccc;
-	margin-left: 10px;
-	font-size: 16px;
-	padding: 5px;
-	transition: all 0.3s ease;
-  }
-  
-  input[type="text"]:hover, select:hover, input[type="date"]:hover {
-	 border-bottom-color: #00DBA1;
-  }
-	
-  input[type="text"]:focus, select:focus, input[type="date"]:focus {
-	outline: none;
-	border-bottom-color: #FE5748;
-  }
-  
-  select option[value=""] {
-	display: none;
-  }
-  /*download and print button*/
-  .btn-row {
-	display: flex;
-	justify-content: space-between;
-	margin-top: 30px;
-  }
-  .download-btn {
-	background-color: #FE5748;
-	color: #fff;
-	border: none;
-	border-radius: 5px;
-	font-size: 16px;
-	padding: 10px;
-  }
-  .download-btn:hover{
-	background: rgb(113,21,0);
-	background: linear-gradient(90deg, rgba(113,21,0,1) 0%, rgba(149,73,15,1) 41%, rgba(10,250,167,1) 100%);
-  }
-  
-  .print-btn{
-	background-color:#FE5748;
-	color: #fff;
-	border: none;
-	border-radius: 5px;
-	font-size: 16px;
-	padding: 10px;
-  }
-  
-  .print-btn :hover{
-	background: rgb(113,21,0);
-	background: linear-gradient(90deg, rgba(113,21,0,1) 0%, rgba(149,73,15,1) 41%, rgba(10,250,167,1) 100%);
-  }
+.container {
+    text-align: center; /* Center-align content within the container */
+}
 
-  /*bottom design*/
-  .bottom-rectangle {
-	width: 100%;
-	height: 200px;
-  background: linear-gradient(-135deg, rgba(0, 183, 135, 1) 50%, #FE5748 100%);
-	position: relative;
-  }
-  
-  .curved-cut {
-	width: 100%;
-	height: 10rem;
-	background-color: #fff;
-	border-bottom-left-radius: 70% 100%;
-	border-bottom-right-radius: 70% 100%;
-	position: absolute;
-	top: -5px;
-	left: 0;
-  }
+.Info {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Navigation bar styles */
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+header {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a shadow to the header */
+}
+
+nav {
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Add this style to align the Contact Us button with the navigation bar buttons */
+nav ul {
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    list-style: none;
+    margin-top: 50px;
+    padding: 30px;
+    align-items: center;
+    font-size: 20px; /* Adjust font size for navigation links */
+}
+
+/* Style the Contact Us button within the <li> element */
+nav li:last-child .button_con {
+    top: 75px; /* Adjust top position to align with other buttons */
+    border: none;
+    background-color: transparent;
+    color: grey; /* Adjust the color to match other buttons */
+    font-weight: normal; /* Adjust font weight if needed */
+    font-size: 20px; /* Adjust font size if needed */
+}
+
+nav a {
+    display: block;
+    padding: 10px 25px;
+    text-decoration: none;
+    color: grey;
+    position: relative;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    background: linear-gradient(to right, #FE5748, #FF6542, #00DBA1);
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+nav a:hover {
+    color: black;
+}
+
+/* Welcome section styles */
+.greeting {
+    margin: 5rem;
+    color: gray;
+}
+
+/* Button styles */
+.button_con {
+    background-color: transparent;
+    border: 2px solid #1A1A1A;
+    border-radius: 10px;
+    color: #3B3B3B;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 10px 30px;
+    transition: all 300ms ease-in-out;
+    float: right;
+    position: absolute;
+    right: 100px;
+}
+
+.button_con:hover {
+    background: linear-gradient(135deg, #ff6c3f 0%, #fe4350 100%);
+    color: #fff;
+}
+
+/* Announcement card styles */
+.card {
+    background: #25503f;
+    width: 20%;
+    height: 80rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    margin: -100px 0;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    text-align: center;
+    float: right;
+}
+
+.card-body {
+    color: white;
+}
+
+.card-header {
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* Remarks card styles */
+.card2 {
+    background: #FE5748;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    text-align: center;
+    width: 40%;
+    margin: auto;
+}
+
+.card-heading {
+    color: white;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.card-paragraph {
+    color: white;
+    text-align: justify;
+}
+
+/* Profile picture styles */
+.profile-pic-div {
+    display: flex;
+    height: 9.5rem;
+    width: 9.5rem;
+    margin-left: 15rem;
+    margin-top: -95px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 0%;
+    overflow: hidden;
+    border: 1px solid grey;
+}
+
+.photo {
+    height: 100%;
+    width: 100%;
+}
+
+.file {
+    display: none;
+}
+
+.uploadBtn {
+    height: 40px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    color: black;
+    line-height: 30px;
+    font-family: sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Certificate form styles */
+.card3 {
+    margin: 10px 250px 9px;
+    width: 600px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+}
+
+h1 {
+    margin: 0 0 30px;
+    text-align: center;
+    font-weight: bold;
+    color: #FF7B54;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    padding: 30px;
+    border-bottom: 1px solid #d1d1d1;
+}
+
+label {
+    display: inline-block;
+    width: 120px;
+    font-weight: bold;
+    color: #b01717;
+}
+
+input[type="text"],
+select,
+input[type="date"] {
+    flex: 1;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    margin-left: 10px;
+    font-size: 16px;
+    padding: 5px;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:hover,
+select:hover,
+input[type="date"]:hover {
+    border-bottom-color: #00DBA1;
+}
+
+input[type="text"]:focus,
+select:focus,
+input[type="date"]:focus {
+    outline: none;
+    border-bottom-color: #FE5748;
+}
+
+select option[value=""] {
+    display: none;
+}
+
+/* Download and print button styles */
+.btn-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.download-btn {
+    background-color: #FE5748;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.download-btn:hover {
+    background: rgb(113, 21, 0);
+    background: linear-gradient(90deg, rgba(113, 21, 0, 1) 0%, rgba(149, 73, 15, 1) 41%, rgba(10, 250, 167, 1) 100%);
+}
+
+.print-btn {
+    background-color: #FE5748;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.print-btn:hover {
+    background: rgb(113, 21, 0);
+    background: linear-gradient(90deg, rgba(113, 21, 0, 1) 0%, rgba(149, 73, 15, 1) 41%, rgba(10, 250, 167, 1) 100%);
+}
+
+/* Bottom design styles */
+/* Update the .bottom-rectangle and .curved-cut styles */
+.bottom-rectangle {
+    position: absolute;
+    bottom: 80; /* Added 'px' unit for bottom position */
+    width: 100%;
+    background: linear-gradient(-135deg, rgba(0, 183, 135, 1) 50%, #FE5748 100%);
+}
+
+.curved-cut {
+    width: 100%;
+    height: 10rem;
+    background-color: #fff;
+    border-bottom-left-radius: 70% 100%;
+    border-bottom-right-radius: 70% 100%;
+}
